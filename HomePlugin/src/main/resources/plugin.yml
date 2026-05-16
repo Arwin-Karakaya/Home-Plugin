@@ -1,0 +1,33 @@
+name: HomePlugin
+version: 1.0.0
+main: dev.homeplugin.HomePlugin
+api-version: "1.21"
+author: HomePlugin
+description: Einfaches Home-Plugin mit /sethome, /home und /delhome
+
+commands:
+  sethome:
+    description: Setzt dein Home an deiner aktuellen Position.
+    usage: /sethome
+    permission: homeplugin.sethome
+
+  home:
+    description: Teleportiert dich zu deinem gesetzten Home.
+    usage: /home
+    permission: homeplugin.home
+
+  delhome:
+    description: Löscht dein gesetztes Home.
+    usage: /delhome
+    permission: homeplugin.delhome
+
+permissions:
+  homeplugin.sethome:
+    description: Erlaubt das Setzen eines Homes.
+    default: true
+  homeplugin.home:
+    description: Erlaubt die Teleportation zum Home.
+    default: true
+  homeplugin.delhome:
+    description: Erlaubt das Löschen eines Homes.
+    default: true
